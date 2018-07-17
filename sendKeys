@@ -8,5 +8,22 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 
 
 解决方法
+法一：
+Follow the steps below if you are using eclipse:
+
+1）Right click on your java project and select Build Path -> Click on Configure Build Path...
+2）In project properties window: Click/select Java Compiler at the left panel
+3）At the right panel: change the Compiler compliance level from 1.4 to 1.7 or higher
+4）Lastly Click on Apply and OK
+
+
+
+
+法二：
 searchField.sendKeys(new String[] { "sample" });
 将sendKeys中的内容换成上面的内容。
+
+
+然后又会出现一个问题：
+The method sendKeys(CharSequence[]) in the type WebElement is not applicable for the arguments (String)
+
