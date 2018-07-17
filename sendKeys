@@ -1,0 +1,12 @@
+代码: driver.findElement(By.id("kw")).sendKeys("123");
+
+出现的这个问题：
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+    The method sendKeys(CharSequence[]) in the type WebElement is not applicable for the arguments (String)
+
+    at selenium22.T1.main(T1.java:24)
+
+
+解决方法
+searchField.sendKeys(new String[] { "sample" });
+将sendKeys中的内容换成上面的内容。
