@@ -1,0 +1,2 @@
+关于maven的类前面有感叹号。运行找不到类的
+直接在path--librearies里面删掉有问题的jre
